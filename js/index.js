@@ -28,7 +28,7 @@ function createRoom() {
     } else {
         $.ajax({
             type: "GET",
-            url: 'createroom.php',
+            url: '../php/createroom.php',
             dataType: "html",
             success: function() {
                 alert("[GET] Room created");

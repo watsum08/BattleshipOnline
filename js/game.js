@@ -15,7 +15,7 @@ function playerClick(evt) {
     let playerBlockID = evt.currentTarget.id;
     $.ajax({
         type: "POST",
-        url: 'sendmove.php',
+        url: '../php/sendmove.php',
         data: {position: playerBlockID},
         success: function() {
             playerBlocks[playerBlockID].classList.add("player-block-off"); 

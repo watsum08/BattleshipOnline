@@ -1,0 +1,161 @@
+/* DEFAULT STYLE (RESET) */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ddd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* PLAYER */
+
+#playerZone {
+    background-color: #777;
+    display: flex;
+    width: 640px;
+    height: 640px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.player-block {
+    display: block;
+    background-color: darkblue;
+    width: 54px;
+    height: 54px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.player-block:hover {
+    background-color: lightblue;
+}
+
+.player-block:active {
+    background-color: blue;
+}
+
+.player-block-off, .player-block-off:hover, .player-block-off:active {
+    background-color: #333;
+}
+
+/* ENEMY */
+
+#enemyZone {
+    background-color: #777;
+    display: flex;
+    width: 480px;
+    height: 480px;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.enemy-block {
+    display: block;
+    background-color: darkred;
+    width: 40.5px;
+    height: 40.5px;
+    margin-right: 7.5px;
+    margin-top: 7.5px;
+}
+
+/* ----- */
+
+#game-container {
+    display: flex;
+}
+
+/* INDEX.PHP */
+
+#lobby-container {
+    display: block;
+}
+
+input, label, .lobbyDivs-text {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+input {
+    width: 160px;
+    text-align: center;
+}
+
+/* Hide arrows from input type=number */
+/* https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* ---------------------------------- */
+
+#span-room-key {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.lobby-rooms {
+    display: block;
+    width: 600px;
+    height: 360px;
+    padding-top: 120px;
+    margin: auto;
+    margin-top: 48px;
+    background-color: lightsalmon;
+    text-align: center;
+}
+
+#div-create-room {
+    display: none;
+}
+
+#lobby-btn-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px;
+    text-transform: uppercase;
+    background-color: #eee;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.3rem;
+    border: 2px solid #555;
+    border-radius: 16px;
+    outline: none;
+}
+
+button:hover {
+    background-color: yellow;
+    transition: .5s background-color;
+    -webkit-transition: .5s background-color;
+    -moz-transition: .5s background-color;
+}
+
+button:active {
+    background-color: yellowgreen;
+}
+
+button:first-child {
+    margin-right: 36px;
+}
